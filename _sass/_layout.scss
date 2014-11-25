@@ -12,11 +12,9 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
+    border-top: 5px solid $brand-color;
     min-height: 56px;
-    width: 230px;
-    margin-right: 30px;
+    min-width: 230px;
     // Positioning context for the mobile navigation icon
     position: relative;
 }
@@ -37,8 +35,12 @@
 
 .ruby {
     font-weight: bold;
+    color: $brand-color;
 }
 
+.ruby a {
+    color: $brand-color;
+}
 .rails {
     font-weight: 200;
     font-size: 0.85em;
@@ -62,13 +64,17 @@
     }
 
     .page-link {
-        color: $text-color;
+        color: $grey-color-light;
         line-height: $base-line-height;
 
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
             margin-left: 20px;
-        }   
+        } 
+
+        &:hover {
+            color: $brand-color;
+        }  
     }
 
     @include media-query($on-palm) {
@@ -156,13 +162,13 @@
 }
 
 .footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(5% - (#{$spacing-unit} / 2));
+    width:         calc(5% - (#{$spacing-unit} / 2));
 }
 
 .footer-col-3 {
-    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(60% - (#{$spacing-unit} / 2));
+    width:         calc(60% - (#{$spacing-unit} / 2));
 }
 
 @include media-query($on-laptop) {

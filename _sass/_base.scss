@@ -94,11 +94,11 @@ a {
     text-decoration: none;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        color: $brand-color;
     }
 
     &:hover {
-        color: $text-color;
+        color: $grey-color-light;
         text-decoration: none;
     }
 }
@@ -131,7 +131,7 @@ code {
     font-size: 15px;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
-    background-color: #eef;
+    background-color: #fff5f5;
 }
 
 code {
