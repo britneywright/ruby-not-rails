@@ -1,10 +1,11 @@
 # Site settings
 title: Ruby Not Rails
-email: blw06g@gmail.com
+email: britney@britneywright.com
 description: "First comes language, then comes framework. Ruby development interviews and inspiration."
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://rubynotrails.com" # the base hostname & protocol for your site
 twitter_username: britneywright
+paginate: 2
 
 # Build settings
 markdown: kramdown

@@ -2,6 +2,11 @@
     display: flex;
 }
 
+@include media-query($on-palm) {
+    .primary {
+        display: block;
+    }
+}
 
 /**
  * Site header
@@ -10,18 +15,19 @@
     border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
-    min-width: 170px;
+    width: 230px;
+    margin-right: 30px;
     // Positioning context for the mobile navigation icon
     position: relative;
 }
 
 .site-title {
-    font-size: 26px;
+    font-size: 30px;
     line-height: 56px;
     letter-spacing: 1.25px;
     margin-bottom: 0;
     float: left;
-    font-family: bebas_neueregular;
+    font-family: $title-font-family;
 
     &,
     &:visited {
@@ -39,7 +45,17 @@
 }
 
 .site-nav {
-    line-height: 56px;
+    font-family: $title-font-family;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    line-height: 50px;
+
+    ul {
+        list-style: none;
+        margin-left: 0;
+     }
 
     .menu-icon {
         display: none;
@@ -52,7 +68,7 @@
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
             margin-left: 20px;
-        }
+        }   
     }
 
     @include media-query($on-palm) {
@@ -246,5 +262,40 @@
         @include media-query($on-laptop) {
             font-size: 18px;
         }
+    }
+}
+
+/**
+ * Index content
+ */
+
+.post-list .thumb {
+    float: left;
+    width: 300px;
+    height: 186px;
+    -webkit-mask-image: url(../assets/ruby_jewel.png);
+    margin: 10px 20px 10px 0;
+ }
+
+.post-list h2 {
+    margin-bottom: 0;
+}
+
+.post-list li {
+    border-bottom: 1px dashed #aaa;
+    min-height: 200px;
+    padding-bottom: 10px;
+}
+
+.post-list li:last-of-type {
+    border-bottom: none;
+}
+
+@include media-query(400px) {
+    .post-list .thumb {
+        float: none;
+    }
+    .post-meta {
+        display: block;
     }
 }
