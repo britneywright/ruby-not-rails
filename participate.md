@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Participate
-permalink: /particpate/
+permalink: /participate/
 ---
 
 Want to share your experiences and expertise with others? Start by answering the questions below.
