@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Ruby is a beautiful, friendly programming language. But often times it's overshadowded by the framework, Ruby on Rails, and it's full potential goes unrealized. *Ruby Not Rails* highlights creative ruby projects and the people who make them. New developers will gain a better understanding of the wide uses for ruby, beyond the typical Ruby on Rails web app. Veteran developers will break from their programming monotony and find refreshing ways to utilize their skills and the resources in their toolkit.
+Ruby is a beautiful, friendly programming language. But often times it's overshadowded by the framework, Ruby on Rails, and it's full potential goes unrealized. *Ruby not Rails* highlights creative ruby projects and the people who make them. New developers will gain a better understanding of the wide uses for ruby, beyond the typical Ruby on Rails web app. Veteran developers will break from their programming monotony and find refreshing ways to utilize their skills and the resources in their toolkit.
 
 ### The Interviews
 
